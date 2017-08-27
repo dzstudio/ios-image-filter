@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5146B6D119876A3D005DA76D /* TUImageFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 5146B6D019876A3D005DA76D /* TUImageFilters.m */; };
+		517137921978B18B00F2AAB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517137911978B18B00F2AAB9 /* Foundation.framework */; };
+		517137941978B18B00F2AAB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517137931978B18B00F2AAB9 /* CoreGraphics.framework */; };
+		517137961978B18B00F2AAB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517137951978B18B00F2AAB9 /* UIKit.framework */; };
+		5171379C1978B18B00F2AAB9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5171379A1978B18B00F2AAB9 /* InfoPlist.strings */; };
+		5171379E1978B18B00F2AAB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171379D1978B18B00F2AAB9 /* main.m */; };
+		517137A21978B18B00F2AAB9 /* TUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 517137A11978B18B00F2AAB9 /* TUAppDelegate.m */; };
+		517137AA1978B18B00F2AAB9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 517137A91978B18B00F2AAB9 /* Images.xcassets */; };
+		517137B11978B18B00F2AAB9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517137B01978B18B00F2AAB9 /* XCTest.framework */; };
+		517137B21978B18B00F2AAB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517137911978B18B00F2AAB9 /* Foundation.framework */; };
+		517137B31978B18B00F2AAB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517137951978B18B00F2AAB9 /* UIKit.framework */; };
+		517137BB1978B18C00F2AAB9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 517137B91978B18C00F2AAB9 /* InfoPlist.strings */; };
+		517137BD1978B18C00F2AAB9 /* TuImageSpiritTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 517137BC1978B18C00F2AAB9 /* TuImageSpiritTests.m */; };
+		517138361978B94B00F2AAB9 /* TUImageSpirit.m in Sources */ = {isa = PBXBuildFile; fileRef = 517138351978B94B00F2AAB9 /* TUImageSpirit.m */; };
+		5171383E19790B2800F2AAB9 /* CLSplineInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171383919790B2800F2AAB9 /* CLSplineInterpolator.m */; };
+		5171383F19790B2800F2AAB9 /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171383B19790B2800F2AAB9 /* UIImage+Utility.m */; };
+		5171384019790B2800F2AAB9 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171383D19790B2800F2AAB9 /* UIView+Frame.m */; };
+		517A082C197CA55B006E64AD /* TUImageClippingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 517A082B197CA55B006E64AD /* TUImageClippingView.m */; };
+		517A082F197CA56A006E64AD /* TUImageWaterMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 517A082E197CA56A006E64AD /* TUImageWaterMarkView.m */; };
+		517A0832197CA581006E64AD /* TUImageFilterListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 517A0831197CA581006E64AD /* TUImageFilterListView.m */; };
+		517A0835197CA776006E64AD /* UIDevice+SystemVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 517A0834197CA776006E64AD /* UIDevice+SystemVersion.m */; };
+		51EAD868198F8BFD00766AB8 /* beckham.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51EAD867198F8BFD00766AB8 /* beckham.jpg */; };
+		51FFDA1D197D0FA30021894A /* TUImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51FFDA1B197D0FA30021894A /* TUImageViewController.m */; };
+		51FFDA1E197D0FA30021894A /* TUImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51FFDA1C197D0FA30021894A /* TUImageViewController.xib */; };
+		51FFDA22197D10CB0021894A /* TUImageClipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51FFDA20197D10CB0021894A /* TUImageClipViewController.m */; };
+		51FFDA23197D10CB0021894A /* TUImageClipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51FFDA21197D10CB0021894A /* TUImageClipViewController.xib */; };
+		51FFDA27197D10DE0021894A /* TUImageFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51FFDA25197D10DE0021894A /* TUImageFilterViewController.m */; };
+		51FFDA28197D10DE0021894A /* TUImageFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51FFDA26197D10DE0021894A /* TUImageFilterViewController.xib */; };
+		51FFDA2C197D10F40021894A /* TUImageRotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51FFDA2A197D10F40021894A /* TUImageRotateViewController.m */; };
+		51FFDA2D197D10F40021894A /* TUImageRotateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51FFDA2B197D10F40021894A /* TUImageRotateViewController.xib */; };
+		51FFDA31197D11040021894A /* TUImageTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51FFDA2F197D11040021894A /* TUImageTextViewController.m */; };
+		51FFDA32197D11040021894A /* TUImageTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51FFDA30197D11040021894A /* TUImageTextViewController.xib */; };
+		51FFDA35197D11510021894A /* TUImageViewController-568h.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51FFDA34197D11510021894A /* TUImageViewController-568h.xib */; };
+		51FFDA37197D11690021894A /* TUImageClipViewController-568h.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51FFDA36197D11690021894A /* TUImageClipViewController-568h.xib */; };
+		51FFDA39197D117D0021894A /* TUImageFilterViewController-568h.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51FFDA38197D117D0021894A /* TUImageFilterViewController-568h.xib */; };
+		51FFDA3B197D118D0021894A /* TUImageRotateViewController-568h.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51FFDA3A197D118D0021894A /* TUImageRotateViewController-568h.xib */; };
+		51FFDA3D197D119D0021894A /* TUImageTextViewController-568h.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51FFDA3C197D119D0021894A /* TUImageTextViewController-568h.xib */; };
+		9690241C1B0CC79E0062EB87 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9690241A1B0CC79E0062EB87 /* Model.xcdatamodeld */; };
+		96FFCC88197FF8860009F4B1 /* TUImageBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FFCC87197FF8860009F4B1 /* TUImageBaseViewController.m */; };
+		96FFCC8A198007780009F4B1 /* template.png in Resources */ = {isa = PBXBuildFile; fileRef = 96FFCC89198007780009F4B1 /* template.png */; };
+		96FFCC941981577D0009F4B1 /* Tu_apply.png in Resources */ = {isa = PBXBuildFile; fileRef = 96FFCC8C1981577D0009F4B1 /* Tu_apply.png */; };
+		96FFCC951981577D0009F4B1 /* Tu_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 96FFCC8D1981577D0009F4B1 /* Tu_back.png */; };
+		96FFCC961981577D0009F4B1 /* Tu_brush.png in Resources */ = {isa = PBXBuildFile; fileRef = 96FFCC8E1981577D0009F4B1 /* Tu_brush.png */; };
+		96FFCC971981577D0009F4B1 /* Tu_crop.png in Resources */ = {isa = PBXBuildFile; fileRef = 96FFCC8F1981577D0009F4B1 /* Tu_crop.png */; };
+		96FFCC981981577D0009F4B1 /* Tu_filter_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96FFCC901981577D0009F4B1 /* Tu_filter_icon.png */; };
+		96FFCC991981577D0009F4B1 /* Tu_pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = 96FFCC911981577D0009F4B1 /* Tu_pencil.png */; };
+		96FFCC9A1981577D0009F4B1 /* Tu_update.png in Resources */ = {isa = PBXBuildFile; fileRef = 96FFCC921981577D0009F4B1 /* Tu_update.png */; };
+		96FFCC9B1981577D0009F4B1 /* Tu_update2.png in Resources */ = {isa = PBXBuildFile; fileRef = 96FFCC931981577D0009F4B1 /* Tu_update2.png */; };
+		96FFCC9E19837E5F0009F4B1 /* CLCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FFCC9D19837E5F0009F4B1 /* CLCircleView.m */; };
+		96FFCCA01984DF510009F4B1 /* TUImageFilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96FFCC9F1984DF510009F4B1 /* TUImageFilterCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		517137B41978B18B00F2AAB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 517137861978B18B00F2AAB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5171378D1978B18B00F2AAB9;
+			remoteInfo = TuImageSpirit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5146B6CF19876A3D005DA76D /* TUImageFilters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUImageFilters.h; sourceTree = "<group>"; };
+		5146B6D019876A3D005DA76D /* TUImageFilters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUImageFilters.m; sourceTree = "<group>"; };
+		5171378E1978B18B00F2AAB9 /* TuImageSpirit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuImageSpirit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		517137911978B18B00F2AAB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		517137931978B18B00F2AAB9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		517137951978B18B00F2AAB9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		517137991978B18B00F2AAB9 /* TuImageSpirit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TuImageSpirit-Info.plist"; sourceTree = "<group>"; };
+		5171379B1978B18B00F2AAB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5171379D1978B18B00F2AAB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5171379F1978B18B00F2AAB9 /* TuImageSpirit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TuImageSpirit-Prefix.pch"; sourceTree = "<group>"; };
+		517137A01978B18B00F2AAB9 /* TUAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TUAppDelegate.h; sourceTree = "<group>"; };
+		517137A11978B18B00F2AAB9 /* TUAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TUAppDelegate.m; sourceTree = "<group>"; };
+		517137A91978B18B00F2AAB9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		517137AF1978B18B00F2AAB9 /* TuImageSpiritTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuImageSpiritTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		517137B01978B18B00F2AAB9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		517137B81978B18B00F2AAB9 /* TuImageSpiritTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TuImageSpiritTests-Info.plist"; sourceTree = "<group>"; };
+		517137BA1978B18C00F2AAB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		517137BC1978B18C00F2AAB9 /* TuImageSpiritTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TuImageSpiritTests.m; sourceTree = "<group>"; };
+		517138341978B94B00F2AAB9 /* TUImageSpirit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUImageSpirit.h; sourceTree = "<group>"; };
+		517138351978B94B00F2AAB9 /* TUImageSpirit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUImageSpirit.m; sourceTree = "<group>"; };
+		5171383819790B2800F2AAB9 /* CLSplineInterpolator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLSplineInterpolator.h; sourceTree = "<group>"; };
+		5171383919790B2800F2AAB9 /* CLSplineInterpolator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLSplineInterpolator.m; sourceTree = "<group>"; };
+		5171383A19790B2800F2AAB9 /* UIImage+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utility.h"; sourceTree = "<group>"; };
+		5171383B19790B2800F2AAB9 /* UIImage+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utility.m"; sourceTree = "<group>"; };
+		5171383C19790B2800F2AAB9 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		5171383D19790B2800F2AAB9 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		517A082A197CA55B006E64AD /* TUImageClippingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUImageClippingView.h; sourceTree = "<group>"; };
+		517A082B197CA55B006E64AD /* TUImageClippingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUImageClippingView.m; sourceTree = "<group>"; };
+		517A082D197CA56A006E64AD /* TUImageWaterMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUImageWaterMarkView.h; sourceTree = "<group>"; };
+		517A082E197CA56A006E64AD /* TUImageWaterMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUImageWaterMarkView.m; sourceTree = "<group>"; };
+		517A0830197CA581006E64AD /* TUImageFilterListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUImageFilterListView.h; sourceTree = "<group>"; };
+		517A0831197CA581006E64AD /* TUImageFilterListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUImageFilterListView.m; sourceTree = "<group>"; };
+		517A0833197CA776006E64AD /* UIDevice+SystemVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+SystemVersion.h"; sourceTree = "<group>"; };
+		517A0834197CA776006E64AD /* UIDevice+SystemVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+SystemVersion.m"; sourceTree = "<group>"; };
+		51EAD867198F8BFD00766AB8 /* beckham.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beckham.jpg; sourceTree = "<group>"; };
+		51FFDA1A197D0FA30021894A /* TUImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUImageViewController.h; sourceTree = "<group>"; };
+		51FFDA1B197D0FA30021894A /* TUImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUImageViewController.m; sourceTree = "<group>"; };
+		51FFDA1C197D0FA30021894A /* TUImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TUImageViewController.xib; path = ../TUImageViewController.xib; sourceTree = "<group>"; };
+		51FFDA1F197D10CB0021894A /* TUImageClipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUImageClipViewController.h; sourceTree = "<group>"; };
+		51FFDA20197D10CB0021894A /* TUImageClipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUImageClipViewController.m; sourceTree = "<group>"; };
+		51FFDA21197D10CB0021894A /* TUImageClipViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TUImageClipViewController.xib; path = ../TUImageClipViewController.xib; sourceTree = "<group>"; };
+		51FFDA24197D10DE0021894A /* TUImageFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUImageFilterViewController.h; sourceTree = "<group>"; };
+		51FFDA25197D10DE0021894A /* TUImageFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUImageFilterViewController.m; sourceTree = "<group>"; };
+		51FFDA26197D10DE0021894A /* TUImageFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TUImageFilterViewController.xib; path = ../TUImageFilterViewController.xib; sourceTree = "<group>"; };
+		51FFDA29197D10F40021894A /* TUImageRotateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUImageRotateViewController.h; sourceTree = "<group>"; };
+		51FFDA2A197D10F40021894A /* TUImageRotateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUImageRotateViewController.m; sourceTree = "<group>"; };
+		51FFDA2B197D10F40021894A /* TUImageRotateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TUImageRotateViewController.xib; path = ../TUImageRotateViewController.xib; sourceTree = "<group>"; };
+		51FFDA2E197D11040021894A /* TUImageTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUImageTextViewController.h; sourceTree = "<group>"; };
+		51FFDA2F197D11040021894A /* TUImageTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUImageTextViewController.m; sourceTree = "<group>"; };
+		51FFDA30197D11040021894A /* TUImageTextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TUImageTextViewController.xib; path = ../TUImageTextViewController.xib; sourceTree = "<group>"; };
+		51FFDA34197D11510021894A /* TUImageViewController-568h.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "TUImageViewController-568h.xib"; sourceTree = "<group>"; };
+		51FFDA36197D11690021894A /* TUImageClipViewController-568h.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "TUImageClipViewController-568h.xib"; sourceTree = "<group>"; };
+		51FFDA38197D117D0021894A /* TUImageFilterViewController-568h.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "TUImageFilterViewController-568h.xib"; sourceTree = "<group>"; };
+		51FFDA3A197D118D0021894A /* TUImageRotateViewController-568h.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "TUImageRotateViewController-568h.xib"; sourceTree = "<group>"; };
+		51FFDA3C197D119D0021894A /* TUImageTextViewController-568h.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "TUImageTextViewController-568h.xib"; sourceTree = "<group>"; };
+		9620DC52198624CF002CECD2 /* TUImageFilterTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUImageFilterTypes.h; sourceTree = "<group>"; };
+		9690241B1B0CC79E0062EB87 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		96FFCC86197FF8860009F4B1 /* TUImageBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUImageBaseViewController.h; sourceTree = "<group>"; };
+		96FFCC87197FF8860009F4B1 /* TUImageBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUImageBaseViewController.m; sourceTree = "<group>"; };
+		96FFCC89198007780009F4B1 /* template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = template.png; sourceTree = "<group>"; };
+		96FFCC8C1981577D0009F4B1 /* Tu_apply.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tu_apply.png; sourceTree = "<group>"; };
+		96FFCC8D1981577D0009F4B1 /* Tu_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tu_back.png; sourceTree = "<group>"; };
+		96FFCC8E1981577D0009F4B1 /* Tu_brush.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tu_brush.png; sourceTree = "<group>"; };
+		96FFCC8F1981577D0009F4B1 /* Tu_crop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tu_crop.png; sourceTree = "<group>"; };
+		96FFCC901981577D0009F4B1 /* Tu_filter_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tu_filter_icon.png; path = ../../Screens/Resources/Tu_filter_icon.png; sourceTree = "<group>"; };
+		96FFCC911981577D0009F4B1 /* Tu_pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tu_pencil.png; sourceTree = "<group>"; };
+		96FFCC921981577D0009F4B1 /* Tu_update.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tu_update.png; sourceTree = "<group>"; };
+		96FFCC931981577D0009F4B1 /* Tu_update2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tu_update2.png; sourceTree = "<group>"; };
+		96FFCC9C19837E5F0009F4B1 /* CLCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCircleView.h; sourceTree = "<group>"; };
+		96FFCC9D19837E5F0009F4B1 /* CLCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCircleView.m; sourceTree = "<group>"; };
+		96FFCC9F1984DF510009F4B1 /* TUImageFilterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TUImageFilterCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5171378B1978B18B00F2AAB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				517137941978B18B00F2AAB9 /* CoreGraphics.framework in Frameworks */,
+				517137961978B18B00F2AAB9 /* UIKit.framework in Frameworks */,
+				517137921978B18B00F2AAB9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		517137AC1978B18B00F2AAB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				517137B11978B18B00F2AAB9 /* XCTest.framework in Frameworks */,
+				517137B31978B18B00F2AAB9 /* UIKit.framework in Frameworks */,
+				517137B21978B18B00F2AAB9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		517137851978B18B00F2AAB9 = {
+			isa = PBXGroup;
+			children = (
+				517137971978B18B00F2AAB9 /* TuImageSpirit */,
+				517137B61978B18B00F2AAB9 /* TuImageSpiritTests */,
+				517137901978B18B00F2AAB9 /* Frameworks */,
+				5171378F1978B18B00F2AAB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5171378F1978B18B00F2AAB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5171378E1978B18B00F2AAB9 /* TuImageSpirit.app */,
+				517137AF1978B18B00F2AAB9 /* TuImageSpiritTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		517137901978B18B00F2AAB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				517137911978B18B00F2AAB9 /* Foundation.framework */,
+				517137931978B18B00F2AAB9 /* CoreGraphics.framework */,
+				517137951978B18B00F2AAB9 /* UIKit.framework */,
+				517137B01978B18B00F2AAB9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		517137971978B18B00F2AAB9 /* TuImageSpirit */ = {
+			isa = PBXGroup;
+			children = (
+				517137C81978B5DF00F2AAB9 /* ImageTools */,
+				51FFDA19197D0F810021894A /* Screens */,
+				517137A01978B18B00F2AAB9 /* TUAppDelegate.h */,
+				517137A11978B18B00F2AAB9 /* TUAppDelegate.m */,
+				96FFCC89198007780009F4B1 /* template.png */,
+				51EAD867198F8BFD00766AB8 /* beckham.jpg */,
+				517137A91978B18B00F2AAB9 /* Images.xcassets */,
+				517137981978B18B00F2AAB9 /* Supporting Files */,
+			);
+			path = TuImageSpirit;
+			sourceTree = "<group>";
+		};
+		517137981978B18B00F2AAB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				517137991978B18B00F2AAB9 /* TuImageSpirit-Info.plist */,
+				5171379A1978B18B00F2AAB9 /* InfoPlist.strings */,
+				5171379D1978B18B00F2AAB9 /* main.m */,
+				5171379F1978B18B00F2AAB9 /* TuImageSpirit-Prefix.pch */,
+				9690241A1B0CC79E0062EB87 /* Model.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		517137B61978B18B00F2AAB9 /* TuImageSpiritTests */ = {
+			isa = PBXGroup;
+			children = (
+				517137BC1978B18C00F2AAB9 /* TuImageSpiritTests.m */,
+				517137B71978B18B00F2AAB9 /* Supporting Files */,
+			);
+			path = TuImageSpiritTests;
+			sourceTree = "<group>";
+		};
+		517137B71978B18B00F2AAB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				517137B81978B18B00F2AAB9 /* TuImageSpiritTests-Info.plist */,
+				517137B91978B18C00F2AAB9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		517137C81978B5DF00F2AAB9 /* ImageTools */ = {
+			isa = PBXGroup;
+			children = (
+				517A0829197CA4F2006E64AD /* UIElements */,
+				5171383719790B2800F2AAB9 /* Utils */,
+				517138341978B94B00F2AAB9 /* TUImageSpirit.h */,
+				517138351978B94B00F2AAB9 /* TUImageSpirit.m */,
+			);
+			path = ImageTools;
+			sourceTree = "<group>";
+		};
+		5171383719790B2800F2AAB9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				517A0833197CA776006E64AD /* UIDevice+SystemVersion.h */,
+				517A0834197CA776006E64AD /* UIDevice+SystemVersion.m */,
+				5171383819790B2800F2AAB9 /* CLSplineInterpolator.h */,
+				5171383919790B2800F2AAB9 /* CLSplineInterpolator.m */,
+				5171383A19790B2800F2AAB9 /* UIImage+Utility.h */,
+				5171383B19790B2800F2AAB9 /* UIImage+Utility.m */,
+				5171383C19790B2800F2AAB9 /* UIView+Frame.h */,
+				5171383D19790B2800F2AAB9 /* UIView+Frame.m */,
+				9620DC52198624CF002CECD2 /* TUImageFilterTypes.h */,
+				5146B6CF19876A3D005DA76D /* TUImageFilters.h */,
+				5146B6D019876A3D005DA76D /* TUImageFilters.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		517A0829197CA4F2006E64AD /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				96FFCC9C19837E5F0009F4B1 /* CLCircleView.h */,
+				96FFCC9D19837E5F0009F4B1 /* CLCircleView.m */,
+				517A082A197CA55B006E64AD /* TUImageClippingView.h */,
+				517A082B197CA55B006E64AD /* TUImageClippingView.m */,
+				517A082D197CA56A006E64AD /* TUImageWaterMarkView.h */,
+				517A082E197CA56A006E64AD /* TUImageWaterMarkView.m */,
+				517A0830197CA581006E64AD /* TUImageFilterListView.h */,
+				517A0831197CA581006E64AD /* TUImageFilterListView.m */,
+				96FFCC9F1984DF510009F4B1 /* TUImageFilterCell.xib */,
+				96FFCC901981577D0009F4B1 /* Tu_filter_icon.png */,
+			);
+			path = UIElements;
+			sourceTree = "<group>";
+		};
+		51FFDA19197D0F810021894A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				96FFCC8B1981577D0009F4B1 /* Resources */,
+				51FFDA33197D11210021894A /* Views */,
+				51FFDA1A197D0FA30021894A /* TUImageViewController.h */,
+				51FFDA1B197D0FA30021894A /* TUImageViewController.m */,
+				51FFDA1F197D10CB0021894A /* TUImageClipViewController.h */,
+				51FFDA20197D10CB0021894A /* TUImageClipViewController.m */,
+				51FFDA24197D10DE0021894A /* TUImageFilterViewController.h */,
+				51FFDA25197D10DE0021894A /* TUImageFilterViewController.m */,
+				51FFDA29197D10F40021894A /* TUImageRotateViewController.h */,
+				51FFDA2A197D10F40021894A /* TUImageRotateViewController.m */,
+				51FFDA2E197D11040021894A /* TUImageTextViewController.h */,
+				51FFDA2F197D11040021894A /* TUImageTextViewController.m */,
+				96FFCC86197FF8860009F4B1 /* TUImageBaseViewController.h */,
+				96FFCC87197FF8860009F4B1 /* TUImageBaseViewController.m */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		51FFDA33197D11210021894A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				51FFDA1C197D0FA30021894A /* TUImageViewController.xib */,
+				51FFDA34197D11510021894A /* TUImageViewController-568h.xib */,
+				51FFDA21197D10CB0021894A /* TUImageClipViewController.xib */,
+				51FFDA36197D11690021894A /* TUImageClipViewController-568h.xib */,
+				51FFDA26197D10DE0021894A /* TUImageFilterViewController.xib */,
+				51FFDA38197D117D0021894A /* TUImageFilterViewController-568h.xib */,
+				51FFDA2B197D10F40021894A /* TUImageRotateViewController.xib */,
+				51FFDA3A197D118D0021894A /* TUImageRotateViewController-568h.xib */,
+				51FFDA30197D11040021894A /* TUImageTextViewController.xib */,
+				51FFDA3C197D119D0021894A /* TUImageTextViewController-568h.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		96FFCC8B1981577D0009F4B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				96FFCC8C1981577D0009F4B1 /* Tu_apply.png */,
+				96FFCC8D1981577D0009F4B1 /* Tu_back.png */,
+				96FFCC8E1981577D0009F4B1 /* Tu_brush.png */,
+				96FFCC8F1981577D0009F4B1 /* Tu_crop.png */,
+				96FFCC911981577D0009F4B1 /* Tu_pencil.png */,
+				96FFCC921981577D0009F4B1 /* Tu_update.png */,
+				96FFCC931981577D0009F4B1 /* Tu_update2.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5171378D1978B18B00F2AAB9 /* TuImageSpirit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 517137C01978B18C00F2AAB9 /* Build configuration list for PBXNativeTarget "TuImageSpirit" */;
+			buildPhases = (
+				5171378A1978B18B00F2AAB9 /* Sources */,
+				5171378B1978B18B00F2AAB9 /* Frameworks */,
+				5171378C1978B18B00F2AAB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TuImageSpirit;
+			productName = TuImageSpirit;
+			productReference = 5171378E1978B18B00F2AAB9 /* TuImageSpirit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		517137AE1978B18B00F2AAB9 /* TuImageSpiritTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 517137C31978B18C00F2AAB9 /* Build configuration list for PBXNativeTarget "TuImageSpiritTests" */;
+			buildPhases = (
+				517137AB1978B18B00F2AAB9 /* Sources */,
+				517137AC1978B18B00F2AAB9 /* Frameworks */,
+				517137AD1978B18B00F2AAB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				517137B51978B18B00F2AAB9 /* PBXTargetDependency */,
+			);
+			name = TuImageSpiritTests;
+			productName = TuImageSpiritTests;
+			productReference = 517137AF1978B18B00F2AAB9 /* TuImageSpiritTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		517137861978B18B00F2AAB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TU;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = ToUnsual;
+				TargetAttributes = {
+					517137AE1978B18B00F2AAB9 = {
+						TestTargetID = 5171378D1978B18B00F2AAB9;
+					};
+				};
+			};
+			buildConfigurationList = 517137891978B18B00F2AAB9 /* Build configuration list for PBXProject "TuImageSpirit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 517137851978B18B00F2AAB9;
+			productRefGroup = 5171378F1978B18B00F2AAB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5171378D1978B18B00F2AAB9 /* TuImageSpirit */,
+				517137AE1978B18B00F2AAB9 /* TuImageSpiritTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5171378C1978B18B00F2AAB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96FFCC971981577D0009F4B1 /* Tu_crop.png in Resources */,
+				51FFDA2D197D10F40021894A /* TUImageRotateViewController.xib in Resources */,
+				96FFCC8A198007780009F4B1 /* template.png in Resources */,
+				51FFDA37197D11690021894A /* TUImageClipViewController-568h.xib in Resources */,
+				96FFCCA01984DF510009F4B1 /* TUImageFilterCell.xib in Resources */,
+				51FFDA35197D11510021894A /* TUImageViewController-568h.xib in Resources */,
+				51FFDA39197D117D0021894A /* TUImageFilterViewController-568h.xib in Resources */,
+				517137AA1978B18B00F2AAB9 /* Images.xcassets in Resources */,
+				51FFDA28197D10DE0021894A /* TUImageFilterViewController.xib in Resources */,
+				96FFCC9B1981577D0009F4B1 /* Tu_update2.png in Resources */,
+				96FFCC951981577D0009F4B1 /* Tu_back.png in Resources */,
+				51FFDA3D197D119D0021894A /* TUImageTextViewController-568h.xib in Resources */,
+				51FFDA3B197D118D0021894A /* TUImageRotateViewController-568h.xib in Resources */,
+				96FFCC961981577D0009F4B1 /* Tu_brush.png in Resources */,
+				51FFDA1E197D0FA30021894A /* TUImageViewController.xib in Resources */,
+				96FFCC941981577D0009F4B1 /* Tu_apply.png in Resources */,
+				51FFDA23197D10CB0021894A /* TUImageClipViewController.xib in Resources */,
+				51EAD868198F8BFD00766AB8 /* beckham.jpg in Resources */,
+				5171379C1978B18B00F2AAB9 /* InfoPlist.strings in Resources */,
+				51FFDA32197D11040021894A /* TUImageTextViewController.xib in Resources */,
+				96FFCC981981577D0009F4B1 /* Tu_filter_icon.png in Resources */,
+				96FFCC991981577D0009F4B1 /* Tu_pencil.png in Resources */,
+				96FFCC9A1981577D0009F4B1 /* Tu_update.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		517137AD1978B18B00F2AAB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				517137BB1978B18C00F2AAB9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5171378A1978B18B00F2AAB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5171379E1978B18B00F2AAB9 /* main.m in Sources */,
+				517138361978B94B00F2AAB9 /* TUImageSpirit.m in Sources */,
+				5171384019790B2800F2AAB9 /* UIView+Frame.m in Sources */,
+				517A0832197CA581006E64AD /* TUImageFilterListView.m in Sources */,
+				5146B6D119876A3D005DA76D /* TUImageFilters.m in Sources */,
+				51FFDA31197D11040021894A /* TUImageTextViewController.m in Sources */,
+				96FFCC9E19837E5F0009F4B1 /* CLCircleView.m in Sources */,
+				5171383E19790B2800F2AAB9 /* CLSplineInterpolator.m in Sources */,
+				51FFDA1D197D0FA30021894A /* TUImageViewController.m in Sources */,
+				517A082C197CA55B006E64AD /* TUImageClippingView.m in Sources */,
+				517A082F197CA56A006E64AD /* TUImageWaterMarkView.m in Sources */,
+				51FFDA27197D10DE0021894A /* TUImageFilterViewController.m in Sources */,
+				96FFCC88197FF8860009F4B1 /* TUImageBaseViewController.m in Sources */,
+				517A0835197CA776006E64AD /* UIDevice+SystemVersion.m in Sources */,
+				517137A21978B18B00F2AAB9 /* TUAppDelegate.m in Sources */,
+				51FFDA22197D10CB0021894A /* TUImageClipViewController.m in Sources */,
+				51FFDA2C197D10F40021894A /* TUImageRotateViewController.m in Sources */,
+				9690241C1B0CC79E0062EB87 /* Model.xcdatamodeld in Sources */,
+				5171383F19790B2800F2AAB9 /* UIImage+Utility.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		517137AB1978B18B00F2AAB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				517137BD1978B18C00F2AAB9 /* TuImageSpiritTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		517137B51978B18B00F2AAB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5171378D1978B18B00F2AAB9 /* TuImageSpirit */;
+			targetProxy = 517137B41978B18B00F2AAB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5171379A1978B18B00F2AAB9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5171379B1978B18B00F2AAB9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		517137B91978B18C00F2AAB9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				517137BA1978B18C00F2AAB9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		517137BE1978B18C00F2AAB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		517137BF1978B18C00F2AAB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		517137C11978B18C00F2AAB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TuImageSpirit/TuImageSpirit-Prefix.pch";
+				INFOPLIST_FILE = "TuImageSpirit/TuImageSpirit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		517137C21978B18C00F2AAB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TuImageSpirit/TuImageSpirit-Prefix.pch";
+				INFOPLIST_FILE = "TuImageSpirit/TuImageSpirit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		517137C41978B18C00F2AAB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TuImageSpirit.app/TuImageSpirit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TuImageSpirit/TuImageSpirit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TuImageSpiritTests/TuImageSpiritTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		517137C51978B18C00F2AAB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TuImageSpirit.app/TuImageSpirit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TuImageSpirit/TuImageSpirit-Prefix.pch";
+				INFOPLIST_FILE = "TuImageSpiritTests/TuImageSpiritTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		517137891978B18B00F2AAB9 /* Build configuration list for PBXProject "TuImageSpirit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				517137BE1978B18C00F2AAB9 /* Debug */,
+				517137BF1978B18C00F2AAB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		517137C01978B18C00F2AAB9 /* Build configuration list for PBXNativeTarget "TuImageSpirit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				517137C11978B18C00F2AAB9 /* Debug */,
+				517137C21978B18C00F2AAB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		517137C31978B18C00F2AAB9 /* Build configuration list for PBXNativeTarget "TuImageSpiritTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				517137C41978B18C00F2AAB9 /* Debug */,
+				517137C51978B18C00F2AAB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9690241A1B0CC79E0062EB87 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9690241B1B0CC79E0062EB87 /* Model.xcdatamodel */,
+			);
+			currentVersion = 9690241B1B0CC79E0062EB87 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 517137861978B18B00F2AAB9 /* Project object */;
+}
