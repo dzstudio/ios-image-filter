@@ -1,3 +1,3 @@
-# iso-newsapp-practice
+# ios-image-filter
 
-# An iOS news app demo. Written in Objective-C. Used to practice.
+# An image filter framework implement for iOS. Also implament an app shows how to use the framework.
